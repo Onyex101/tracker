@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Map</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="light" (click)="nextPage()">
+        <ion-icon name="contact" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="scroll">
+  <ion-card>
+    <ion-card-content>
+      <div #directionsPanel></div>
+    </ion-card-content>
+  </ion-card>
+
+  <div #map id="map"></div>
+</ion-content>
